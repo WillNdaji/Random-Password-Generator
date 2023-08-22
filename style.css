@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #0e1822;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+    position: absolute;
+    left: 35%;
+    top: 25vh;
+    background-color: #1E2A38;
+    height: 400px;
+    width: 400px;
+    color: white;
+    padding: 50px;
+}
+.gen-1{
+    border: none;
+    background: #10B981;
+    padding: 15px;
+    font-size: large;
+    color: white;
+    border-radius: 3px;
+}
+
+h3{
+    font-size: xx-large;
+    font-weight: bolder;
+   
+}
+.span2{
+    color: white;
+    font-size: large;
+    font-weight: 10;
+}
+span{
+    color: #3CB070;
+    font-size: xx-large;
+    
+}
+
+p{
+    margin-bottom: 50px;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    column-gap: 60px;
+    padding-top: 30px;
+    
+}
+.buttons div{
+    margin-top:20px ;
+    
+    border: none;
+    background: #263548;
+    padding: 15px;
+    color: white;
+    border-radius: 3px;
+    display: flex;
+   
+    
+}
+
+.btn{
+    width: 105px;
+    
+    
+}
+
+@media screen and (max-width: 768px) {
+   body{
+    position: relative;
+   }
+    .container {
+        width: 70%;
+        position: absolute;
+        top: 50px;
+        left: 30px;
+        
+    }
+
+    .buttons {
+        grid-template-columns: repeat(2, minmax(80px, 1fr));
+        row-gap: 20px;
+        
+        
+
+    }
+    .btn2{
+        position: relative;
+        right: 40px;
+    }
+    .btn3{
+        position: relative;
+        bottom: 20px;
+    }
+    .btn4{
+        position: relative;
+        bottom: 20px;
+        right: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 65%;
+    }
+
+    .buttons {
+        grid-template-columns: repeat(2, minmax(60px, 1fr));
+    }
+}
